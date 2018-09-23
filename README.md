@@ -12,7 +12,7 @@ You will need `mksquashfs`. Install it using the package manager of your choice.
 ./build.sh
 ```
 
-This will create the `pandora.dosbox.thred.pnd` file.
+This will create the `pandora.xu4.thred.pnd` file.
 
 # Compile XU4 on the Pandora
 
