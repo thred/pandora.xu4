@@ -10,7 +10,11 @@
     <info name="Readme" type="txt/html" src="readme.txt"/>
 
     <previewpics>
-      <pic src="dosbox_004.png"/>
+      <pic src="title.png"/>
+      <pic src="menu.png"/>
+      <pic src="character.png"/>
+      <pic src="world.png"/>
+      <pic src="inn.png"/>
     </previewpics>
 
     <author name="Origin and the XU4 Team" website="http://xu4.sourceforge.net"/>

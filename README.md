@@ -71,6 +71,8 @@ Edit the Makefile and add the following to the FEATURES to optimize for the ARMv
 -O3 -march=armv7-a -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -fassociative-math -funsafe-math-optimizations -ffast-math -pipe
 ```
 
+And disable the `DEBUGCXXFLAGS`.
+
 ## Compile it
 
 Before you compile it, clean your `/media/SDCARD/UsrLocal`. You will have to copy the binary and data files.
@@ -81,6 +83,12 @@ Now, you need to be patient:
 cd xu4-code/u4/src
 
 make
+```
+
+and finally
+
+```
+make install
 ```
 
 copy `/media/SDCARD/UsrLocal` to `src/u4`.
