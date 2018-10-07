@@ -92,3 +92,46 @@ make install
 ```
 
 copy `/media/SDCARD/UsrLocal` to `src/u4`.
+
+# CrossCompile XU4 with the [OpenPandora Toolchain](http://git.openpandora.org/cgi-bin/gitweb.cgi?p=pandora-misc.git;a=tree;f=sdk_installer)
+
+## Prepare the Toolchain
+
+Download the file [openpandora_toolchain.sh](http://git.openpandora.org/cgi-bin/gitweb.cgi?p=pandora-misc.git;a=blob_plain;f=sdk_installer/openpandora_toolchain.sh;hb=HEAD).
+
+Fix the OPKG download location:
+
+Locate the line
+```
+wget -O $TMPDIR/$OPKG_ARCHIVE http://opkg.googlecode.com/files/$OPKG_ARCHIVE
+```
+and replace it with
+```
+wget -O $TMPDIR/$OPKG_ARCHIVE https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/opkg/$OPKG_ARCHIVE
+```
+
+Change the file permission to allow execution:
+```
+chmod a+x sdk_installer_openpandora_toolchain.sh
+```
+and launch it:
+```
+./sdk_installer_openpandora_toolchain.sh
+```
+It will take it's time.
+
+After it has finished, add it to your path. Edit the `.bashrc` file and add the following:
+```
+export PNDSDK="/home/thred/pandora-dev/arm-2011.09"
+export PATH="${PATH}:${PNDSDK}/bin"
+```
+Don't forget to restart your console.
+
+## Download the source
+
+You can find the source on the [XU4 Project Pages](https://sourceforge.net/projects/xu4/).
+```
+svn checkout https://svn.code.sf.net/p/xu4/code/trunk xu4-code
+```
+
+... TBD

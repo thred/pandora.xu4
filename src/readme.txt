@@ -2,6 +2,8 @@
 Pandora XU4
 ===========
 
+https://github.com/thred/pandora.xu4
+
 Ultima IV: Quest of the Avatar is a classic RPG published and released 
 in 1985 by Origin for the Apple II, C64, IBM-PC and Atari 8-bit. 
 

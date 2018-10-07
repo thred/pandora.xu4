@@ -1,13 +1,18 @@
 #!/bin/bash
 
 export SDL_MOUSE_RELATIVE=0
+export SDL_VIDEODRIVER=omapdss
+export SDL_OMAP_LAYER_SIZE=fullscreen
+export SDL_OMAP_NO_TS_TRANSLATE=1
+export SDL_OMAP_TS_FORCE_TSLIB=0
+export SDL_OMAP_VSYNC=0
+export SDL_OMAP_FORCE_DIRECTBUF=1
+
 export HOME="$(pwd)"
 
 DIR="$(dirname $0)"
 DIR="$(readlink -f "$DIR")"
-
 BIN="$DIR/u4/bin/u4"
-
 PWD="pandora/appdata/pandora.xu4.thred"
 
 # prepare the original 
